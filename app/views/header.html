@@ -1,0 +1,35 @@
+<header>
+    <div class="headerlogo">
+        <a ui-sref="home">
+            <img src="images/logo.png" alt="">
+        </a>
+    </div>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a ui-sref="events">Events</a></li>
+                <li><a ui-sref="media">Media</a></li>
+                <li><a ui-sref="contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    
+</header>
+<script>
+$(document).ready(function() {
+    $('#toggle, nav a').click(function() {
+        $('#toggle, nav a').toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
+});
+</script>

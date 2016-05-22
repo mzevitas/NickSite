@@ -1,0 +1,239 @@
+$red:#be1522;
+body {
+    background: url(../images/headerBanner.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.social {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    a {
+        text-decoration: none;
+    }
+    i {
+        color: #fff;
+        padding: 5px;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    .headerlogo {
+        position: fixed;
+        top: 5px;
+        a img {
+            width: 140px;
+        }
+    }
+    .overlay {
+        img {
+            width: 300px;
+            float: left;
+            position: fixed;
+            left: 2%;
+        }
+    }
+    .button_container {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+        height: 27px;
+        width: 34px;
+        cursor: pointer;
+        z-index: 100;
+        transition: opacity .25s ease;
+        &:hover {
+            opacity: .7;
+        }
+        &.active {
+            .top {
+                transform: translateY(11px) translateX(0) rotate(45deg);
+                background: #fff;
+            }
+            .middle {
+                opacity: 0;
+                background: #fff;
+            }
+            .bottom {
+                transform: translateY(-11px) translateX(0) rotate(-45deg);
+                background: #fff;
+            }
+        }
+        span {
+            background: #fff;
+            border: none;
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+            cursor: pointer;
+            &:nth-of-type(2) {
+                top: 11px;
+            }
+            &:nth-of-type(3) {
+                top: 22px;
+            }
+        }
+    }
+    .overlay {
+        position: fixed;
+        background: $red;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .45s, visibility .65s, height .65s;
+        overflow: scroll;
+        &.open {
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+            // transition:ease 1s;
+            li {
+                animation: fadeInRight .5s ease forwards;
+                animation-delay: .35s;
+                &:nth-of-type(2) {
+                    animation-delay: .4s;
+                }
+                &:nth-of-type(3) {
+                    animation-delay: .45s;
+                }
+                &:nth-of-type(4) {
+                    animation-delay: .50s;
+                }
+            }
+        }
+        nav {
+            position: relative;
+            height: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 65px;
+            font-weight: 400;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+            display: inline-block;
+            position: relative;
+            // height: 100%; 
+            cursor: pointer;
+            li {
+                display: block;
+                height: 25%;
+                height: calc(100% / 4);
+                min-height: 50px;
+                position: relative;
+                opacity: 0;
+                width: 100%;
+                cursor: pointer;
+                a {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    color: #fff;
+                    text-decoration: none;
+                    overflow: hidden;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #ffffff;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+// Home Page STyle
+.home {
+    margin: 100px auto;
+    text-align: center;
+    .top {
+        h2 {
+            font-size: 2em;
+            color: #ffffff;
+            text-shadow: 1px 1px 1px $red;
+        }
+        .cover {
+            width: 350px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 1px 1px hsla(0, 0%, 12%, 0.7);
+        }
+    }
+    .landingBtn {
+        a {
+            height: 20px;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-decoration: none;
+            background-color: $red;
+            border-radius: 5px;
+        }
+    }
+    .item  img{
+      box-shadow: 1px 1px 1px 1px hsla(0,0%,12%,0.7);  
+    }
+    .carousel-caption {
+      color: $red;
+    }
+}
+
+// Events PAge STyle
+.events {}
+
+// Landing PAge Style 
+.landingPage {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 50px 50px 50px;
+    h2 {
+        font-size: 2em;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px $red;
+    }
+    img {
+        width: 350px;
+        margin: 0 auto;
+        box-shadow: 1px 1px 1px 1px hsla(0, 0%, 12%, 0.7);
+    }
+    .landingBtn {
+        a {
+            height: 20px;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-decoration: none;
+            background-color: $red;
+            border-radius: 5px;
+        }
+    }
+}
