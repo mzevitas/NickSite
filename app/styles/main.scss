@@ -199,6 +199,11 @@ header {
             border-radius: 5px;
         }
     }
+    .item {
+      width: 40%;
+      min-width: 250px;
+      margin: 0px auto;
+    }
     .item  img{
       box-shadow: 1px 1px 1px 1px hsla(0,0%,12%,0.7);  
     }
@@ -237,3 +242,5 @@ header {
         }
     }
 }
+
+
