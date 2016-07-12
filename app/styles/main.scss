@@ -3,7 +3,37 @@ body {
     background: url(../images/headerBanner.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Francois One', sans-serif;
 }
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: hsla(229,6%,18%,1);
+    text-shadow:  0.1px 0.1px red;
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;    
+
+}
+
+.frame{
+    margin: 150px auto;
+    width: 80%; 
+    background-color: hsla(0,0%,100%,0.9);
+    box-shadow: 2px 2px 2px $red;
+}
+ .spinner {
+
+    width: 250px;
+       text-align: center;
+    margin: 80px auto;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .social {
     position: fixed;
@@ -173,15 +203,20 @@ header {
 }
 
 // Home Page STyle
+
+
 .home {
     margin: 100px auto;
     text-align: center;
+    overflow: scroll;
+
+    .topSec{
+        height: 400px;
+
+       
+    }
     .top {
-        h2 {
-            font-size: 2em;
-            color: #ffffff;
-            text-shadow: 1px 1px 1px $red;
-        }
+       
         .cover {
             width: 350px;
             margin: 0 auto;
@@ -210,10 +245,99 @@ header {
     .carousel-caption {
       color: $red;
     }
+
 }
 
+    .news {
+        background-color: #232323;
+
+        h2 {
+            color: #ffffff;
+        }
+        .musicIcons .fa {
+            color: #ffffff;
+        }
+    }
 // Events PAge STyle
-.events {}
+   
+.events {
+    height: 400px;
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .singleEvent {
+        text-align: center;
+        margin-top: 10%;
+        font-size:30px;
+    text-shadow:  0.1px 0.1px red;
+
+
+    }
+
+}
+    .musicIcons {
+        margin: 0 auto; 
+        text-align: center;
+
+        .fa {
+        padding: 10px;
+        color: #000000;
+        
+        &:hover {
+            color: $red;
+        }
+
+        }
+    }
+.media {
+    h2 {
+        margin-bottom: 0px;
+    }
+    iframe {
+        margin: 0 auto !important;
+        text-align: center; 
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+.about {
+    p{
+        padding: 0px 50px 20px 50px;
+    }
+}
+
+.twitterFeed {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #232323;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    h2 {
+        color: #ffffff;
+        margin-bottom: 10px;
+
+    }
+    .musicIcons .fa{
+        color: #ffffff;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.gala {
+
+h2 {
+    color: #ffffff;
+    text-shadow:0.5px 0.5px 0.5px $red;
+}
+}
 
 // Landing PAge Style 
 .landingPage {
@@ -221,12 +345,10 @@ header {
     text-align: center;
     padding: 0px 50px 50px 50px;
     h2 {
-        font-size: 2em;
-        color: #ffffff;
-        text-shadow: 1px 1px 1px $red;
+        
     }
     img {
-        width: 350px;
+        width: 70%;
         margin: 0 auto;
         box-shadow: 1px 1px 1px 1px hsla(0, 0%, 12%, 0.7);
     }
@@ -244,3 +366,7 @@ header {
 }
 
 
+.fot {
+    text-align: center;
+    color: hsla(276,3%,71%,1);
+}
