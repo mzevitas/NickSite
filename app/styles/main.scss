@@ -5,12 +5,14 @@ body {
     background-size: cover;
     font-family: 'Francois One', sans-serif;
 }
-
+p {
+    color: #ffffff;
+}
 h2 {
     text-align: center;
     padding: 20px;
-    color: hsla(229,6%,18%,1);
-    text-shadow:  0.1px 0.1px red;
+    color: #ffffff;
+    text-shadow:  0.3px 0.3px red;
     font-size: 40px;
     font-family: 'Francois One', sans-serif;    
 
@@ -19,8 +21,8 @@ h2 {
 .frame{
     margin: 150px auto;
     width: 80%; 
-    background-color: hsla(0,0%,100%,0.9);
-    box-shadow: 2px 2px 2px $red;
+    background-color: #232323;
+
 }
  .spinner {
 
@@ -250,6 +252,10 @@ header {
 
     .news {
         background-color: #232323;
+    border-top: 1px solid $red;
+    border-bottom: 1px solid $red;
+
+
 
         h2 {
             color: #ffffff;
@@ -272,6 +278,7 @@ header {
         text-align: center;
         margin-top: 10%;
         font-size:30px;
+        color: #ffffff;
     text-shadow:  0.1px 0.1px red;
 
 
@@ -284,7 +291,7 @@ header {
 
         .fa {
         padding: 10px;
-        color: #000000;
+        color: #ffffff;
         
         &:hover {
             color: $red;
@@ -312,6 +319,9 @@ header {
 }
 
 .twitterFeed {
+    border-top: 1px solid $red;
+    border-bottom: 1px solid $red;
+
     width: 100%;
     padding-top: 20px;
     background-color: #232323;
@@ -344,7 +354,10 @@ h2 {
     margin: 0 auto;
     text-align: center;
     padding: 0px 50px 50px 50px;
+background-color: #232323;
     h2 {
+        color: #ffffff;
+        text-shadow: 0.5px 0.5px 0.5px $red; 
         
     }
     img {
@@ -369,4 +382,22 @@ h2 {
 .fot {
     text-align: center;
     color: hsla(276,3%,71%,1);
+}
+
+
+@media screen and (max-width: 768px){
+    iframe {
+        width: 90% !important;
+    }
+    .fot{
+        display:none;
+    }
+
+    #wufoo-w453nm60wv8iyc {
+        width: 54% !important;
+    }
+
+   .wufoo input.btTxt {
+        color: $red !important;
+    }
 }
