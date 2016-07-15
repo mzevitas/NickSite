@@ -21,7 +21,9 @@ h2 {
 .frame{
     margin: 150px auto;
     width: 80%; 
-    background-color: #232323;
+    background-image: url(../images/grey1.png);
+    box-shadow: 1px 1px 1px 1px hsla(0,0%,87%,0.3);
+    border-radius:1px;
 
 }
  .spinner {
@@ -251,7 +253,7 @@ header {
 }
 
     .news {
-        background-color: #232323;
+        background-image: url(../images/grey1.png);
     border-top: 1px solid $red;
     border-bottom: 1px solid $red;
 
@@ -324,7 +326,7 @@ header {
 
     width: 100%;
     padding-top: 20px;
-    background-color: #232323;
+    background-image: url(../images/grey1.png);
     padding-top: 30px;
     padding-bottom: 40px;
 
