@@ -28,9 +28,9 @@ h2 {
 }
  .spinner {
 
-    width: 250px;
+    width: 275px;
        text-align: center;
-    margin: 80px auto;
+    margin: 80px auto 0px auto;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
@@ -356,7 +356,7 @@ h2 {
     margin: 0 auto;
     text-align: center;
     padding: 0px 50px 50px 50px;
-background-color: #232323;
+background-image: url(../images/grey1.png);
     h2 {
         color: #ffffff;
         text-shadow: 0.5px 0.5px 0.5px $red; 
