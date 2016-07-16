@@ -9,12 +9,9 @@
        
             $urlRouterProvider.otherwise('/');
             $stateProvider
-            .state('landingPage',{
-                url: "/",
-                templateUrl: 'views/landingPage.html'
-            })
+           
             .state('home', {
-                url: '/home',
+                url: '/',
                 templateUrl: 'views/home.html'
             })
             .state('events', {
