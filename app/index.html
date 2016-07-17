@@ -12,6 +12,7 @@
     <!-- endbuild -->
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -21,14 +22,9 @@
   <body ng-app="myApp" ng-cloak ng-controller="routeCtrl">
 
 
-<div ng-include="'views/header.html'" ng-show="!state.includes('landingPage')">
-  
-</div>
-
 
     <div ui-view></div>
 
-<div ng-include="'views/footer.html'"></div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

@@ -1,22 +1,103 @@
+<header>
+    <div class="headerlogo">
+        <a ui-sref="home">
+            <img src="images/NickyWillLogo.png" alt="">
+        </a>
+    </div>
+</header>
 <div class="home">
+    <div class="topSec">
+        <iframe style="padding-right: 5px;" width="720" height="400" src="https://www.youtube.com/embed/XLxVY2gQa_I" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- Nav -->
+    <div class="accordion">
+        <h2 class="nav nav1"><a href="">VIDEOS</a></h2>
+        <section>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="width: 100%;">
+                    <div class="item active">
+                        <iframe width="500" height="275" src="https://www.youtube.com/embed/XLxVY2gQa_I" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe width="500" height="275" src="https://www.youtube.com/embed/oG_Lua1BLnU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe width="500" height="275" src="https://www.youtube.com/embed/GB9jGC00FhQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe width="500" height="275" src="https://www.youtube.com/embed/R8lD644EBfs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <script>
+            $('.carousel').carousel({
+                interval: 2000
+            })
+            </script>
+        </section>
+        <h2 class="nav nav2"><a href="">MUSIC</a></h2>
+        <section>
+            <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="width: 100%;">
+                    <div class="item active">
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A6tDLJLbFZ6vdTuknUDuVBv" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0VnQTMKqFadLj6ELcLjjHq" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A7L2iNktXRgDgXQHtGKkTJh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="item">
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A1watbyYDseq7pwRttbnnKg" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <script>
+            $('.carousel').carousel({
+                interval: 1500
+            })
+            </script>
+        </section>
+        <h2 class="nav nav3"><a href="">Panel 3</a></h2>
+        <section>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</section>
+        <h2 class="nav nav4"><a href="">Panel 3</a></h2>
+        <section>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</section>
+        <h2 class="nav nav5" ui-sref="contact"><a ui-sref="contact" >CONTACT</a></h2>
+        <section>
+        </section>
+    </div>
+</div>
+<script>
+(function($) {
 
-<div class="topSec">
-  <iframe style="padding-right: 5px;" width="720" height="400" src="https://www.youtube.com/embed/XLxVY2gQa_I" frameborder="0" allowfullscreen></iframe>
-</div>
+    var allPanels = $('.accordion > section').hide();
 
-<!-- Nav -->
+    $('.accordion > h2 > a').click(function() {
+        allPanels.slideUp();
+        $(this).parent().next().slideDown();
+        return false;
+    });
 
-<div ui-sref="about" class="nav nav1">
-  Music
-</div>
-<div class="nav nav2">
-    <a ui-sref=""></a>
-
-</div>
-<div class="nav nav3">
-    <a ui-sref=""></a>
-</div>
-<div class="nav nav4">
-    <a ui-sref=""></a>
-</div>
-</div>
+})(jQuery);
+</script>

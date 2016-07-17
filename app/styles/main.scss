@@ -89,32 +89,103 @@ position: fixed;
     .topSec{
         height: auto;
         padding: 100px ;
+        padding-top: 162px;
        background-image: url(../images/headerBanner.jpg);
        background-size: cover;
     
     }
+    
 
     .nav {
-            width: 100%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    height: 117px;
-    padding: 24px 0px 0px 0px;
+    height: 100px;
+    padding: 14px 0px 0px 0px;
     background-color: #a1242c;
     color: #fff;
     font-size: 65px;
+    cursor: pointer;
     border: 1px solid black;
      -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
               -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-
-        
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);    
     }
 
-    .nav1 {
-        background-color: #fff;
+    .nav1 a, .nav1{
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav2 a, .nav2{
+        background-color:  hsla(183,100%,14%,1);;
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav3 a, .nav3{
+        background-color:#ecefee;
+        color: #000;
+        text-decoration: none;
+    }
+    .nav4 a, .nav4{
+        background-color:#895b00;
+        color: #fff;
+        text-decoration: none;
+    } 
+    .nav5 a, .nav5{
+        background-color:$red;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .readMore {
+        font-size:30px;
+        cursor: pointer;
+
     }
     }
+
+.accordion {
+   margin: 0 auto;   
+   h2, section {
+      padding: 10px;
+      a {
+        display: block;
+        font-weight: bold;
+      }
+   }
+  section {
+     font-size: 12px;
+     color: black;
+     padding: 0;
+     &:last-of-type {
+       position: relative;
+       top: -1px;
+     }
+  }
+}
+
+.item {
+    padding: 20px 0px;
+}
+
+
+.contact {
+    background-image: url(../images/grey1.png);
+    // position: fixed;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+
+
+h2 {
+    margin: 0;
+    padding-top: 130px;
+}
+}
+
+
+
 
     .news {
         background-image: url(../images/grey1.png);
@@ -151,21 +222,10 @@ position: fixed;
     }
 
 }
-    .musicIcons {
-        margin: 0 auto; 
-        text-align: center;
-
-        .fa {
-        padding: 10px;
-        color: #ffffff;
-        
-        &:hover {
-            color: $red;
-        }
-
-        }
-    }
+    
 .media {
+    background-image: url(../images/grey1.png);
+    padding-top: 120px;
     h2 {
         margin-bottom: 0px;
     }
@@ -174,6 +234,23 @@ position: fixed;
         text-align: center; 
         display: block;
         margin-bottom: 20px;
+    }
+    .musicIcons {
+        margin: 0 auto; 
+        text-align: center;
+
+        .fa {
+        padding: 10px;
+        color: #fff;
+        
+        &:hover {
+            color: $red;
+            border: 1px solid $red;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        }
     }
 
 }
